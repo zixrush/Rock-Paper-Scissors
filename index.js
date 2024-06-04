@@ -42,15 +42,17 @@ function playRound (humanChoice, computerChoice) {
         ComputerScore++;
         alert ("you lost");
     }
-    console.log('Your score: ${HumanScore} - Computer score: ${ComputerScore}')
+    console.log(`Your score: ${HumanScore} - Computer score: ${ComputerScore}`)
 }
 
 
 
 function  playGame (){
-    for (i= 0; i < 4; i++) {
+    for (i= 0; i < 5; i++) {
     humanSelection = getHumanChoice();
     computerSelection = getComputerChoice();
     playRound (humanSelection, computerSelection);
     }
 }
+
+playGame();
